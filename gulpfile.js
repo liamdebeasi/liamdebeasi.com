@@ -41,6 +41,8 @@ gulp.task('scripts', function() {
   .pipe(order([
       "jquery.js",
       "fastclick.js",
+      "hammer.2.0.4.js",
+      "wptr.1.1.js",
       "console.js",
       "app.js"
   ]))
