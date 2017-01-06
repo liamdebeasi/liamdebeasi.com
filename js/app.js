@@ -96,7 +96,6 @@ $('.item').click(function(){
     var theme = $(this).data('theme');
     
     $('.container-fluid#main').removeClass('scaleIn').removeClass('scaleInNoDelay').removeClass("scaleIn").addClass('scaleOut');
-    $('.container-fluid#page').load('pages/' + file).addClass("active");
     $('footer').addClass("fadeOut");
     if (theme == 'dark') {
         $('body').addClass("dark");
@@ -105,8 +104,16 @@ $('.item').click(function(){
    
     setTimeout(function() {
         $('.container-fluid#main').removeClass('scaleOut').addClass("hide").removeClass("active");
-        $('.container-fluid#page').removeClass("hide").addClass("fadeIn");
         $('footer').removeClass("fadeOut").addClass("hide");
         $('body').scrollTop(0);
+        
+        $('.container-fluid#page').load('pages/' + file, function() {
+            $('.container-fluid#page').removeClass("hide")
+           setTimeout(function(){
+               $('.container-fluid#page').addClass("active"); 
+               $('.container-fluid#page').addClass("fadeIn");
+            }, 250);
+           
+        });
     }, 250);
 });

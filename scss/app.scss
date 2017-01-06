@@ -214,12 +214,15 @@ body {
         }
         #main-content {
             width: 80%; 
+            max-width: 1126px;
             margin: 0 auto;
             padding-top: 10px;
             .item {
                 width: 18vw;
                 height: 18vw;
                 margin: 0 auto;
+                max-height: 256px;
+                max-width: 256px;
                 margin: 6% 0;
                 border-radius: 10px;
                 background-size: cover;
@@ -236,7 +239,15 @@ body {
                     height: 100%;
                     line-height: 18vw;
                     border-radius: 10px;
-                    -webkit-font-smoothing: subpixel-antialiased;
+                    span {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        text-align: center;
+                        -webkit-font-smoothing: subpixel-antialiased;
+                    }
                 }
                 &:hover {
                     transform: scale3d(1.1, 1.1, 1);
@@ -428,6 +439,18 @@ body {
                 &#aia {
                     background-image: url('../images/heros/aia.jpg');
                 }
+                &#pp {
+                    background-image: url('../images/heros/pp.jpg');
+                }
+                &#lotus {
+                    background-image: url('../images/heros/lotus.jpg');
+                }
+                &#ssa {
+                    background-image: url('../images/heros/ssa.jpg');
+                }
+                &#recommendr {
+                    background-image: url('../images/heros/recommendr.jpg');
+                }
                 #title {
                     width: 90%;
                     margin: 0 auto;
@@ -471,6 +494,7 @@ body {
                         width: 90% !important;
                         margin: 0 auto;
                         padding: 20px 0 20px 0;
+                        max-width: 1200px;
                     }
                     img {
                         width: 100%;

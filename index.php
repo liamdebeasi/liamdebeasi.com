@@ -5,9 +5,16 @@
 		<meta name = "viewport" content = "width = device-width, user-scalable = no, maximum-scale = 1.0">
 		<meta name="author" content="Liam DeBeasi">
 		<meta name="apple-mobile-web-app-capable" content="yes">
-		<link rel="icon" type="image/png" href="http://liamdebeasi.com/favicon.png">  
+		<meta name="description" content="Liam DeBeasi is a full stack developer working in Boston, MA.">
+		<meta name="keywords" content="liam debeasi, debeasi, web developer, brendan debeasi, ryan debeasi, paul debeasi, joseph debeasi, liamdbz, liamdebeasi">
+		<link rel="icon" type="image/png" href="images/favicon.jpg">  
 		<link rel="apple-touch-icon-precomposed" href="images/apple-icon.png">
 		<link href="css/app.min.css" rel="stylesheet">
+		
+		<meta property="og:title" content="Liam DeBeasi" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://liamdebeasi.com" />
+        <meta property="og:image" content="https://liamdebeasi.com/images/me.jpg" />
 		<title>Liam DeBeasi | Full Stack Developer</title>
     </head>
     <body class="trans">
@@ -50,45 +57,46 @@
                 <div class="row">
                     <div class="col-xs-6 col-sm-3">
                         <div class="item trans" id="image" data-file="ghost.html" data-theme="dark">
-                            <div class="overlay trans">Ghost App</div>
+                            <div class="overlay trans"><span>Ghost App</span></div>
                         </div>
                     </div>
                     <div class="col-xs-6 col-sm-3">
                         <div class="item trans" id="image3" data-file="ab.html" data-theme="light">
-                            <div class="overlay trans">Art Brokerage</div>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-3">
-                        <div class="item trans" id="image2" data-file="pp.html" data-theme="light">
-                            <div class="overlay trans">Property Planners</div>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-3">
-                        <div class="item trans" id="image4" data-file="lotus.html" data-theme="dark">
-                            <div class="overlay trans">Lotus</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <div class="col-xs-6 col-sm-3">
-                        <div class="item trans" id="image5" data-file="aia.html" data-theme="light">
-                            <div class="overlay trans">Angeles Advisors</div>
+                            <div class="overlay trans"><span>Art Brokerage</span></div>
                         </div>
                     </div>
                     <div class="col-xs-6 col-sm-3">
                         <div class="item trans" id="image6" data-file="ssa.html" data-theme="light">
-                            <div class="overlay trans">Sommelier Society</div>
+                            <div class="overlay trans"><span>Sommelier Society</span></div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="item trans" id="image5" data-file="aia.html" data-theme="light">
+                            <div class="overlay trans"><span>Angeles Advisors</span></div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="row">
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="item trans" id="image4" data-file="lotus.html" data-theme="dark">
+                            <div class="overlay trans"><span>Lotus</span></div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="item trans" id="image2" data-file="pp.html" data-theme="light">
+                            <div class="overlay trans"><span>Property Planners</span></div>
                         </div>
                     </div>
                     <div class="col-xs-6 col-sm-3">
                         <div class="item trans" id="image7" data-file="recommendr.html" data-theme="dark">
-                            <div class="overlay trans">recommendr</div>
+                            <div class="overlay trans"><span>recommendr</span></div>
                         </div>
                     </div>
                     <div class="col-xs-6 col-sm-3">
                         <div class="item trans" id="image8" data-file="ghost.html" data-theme="light">
-                            <div class="overlay trans">HCG Associates</div>
+                            <div class="overlay trans"><span>HCG Associates</span></div>
                         </div>
                     </div>
                 </div>

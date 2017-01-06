@@ -34,8 +34,8 @@
   animation-name: fadeIn;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-duration:0.25s;
-  animation-duration:0.25s;
+  -webkit-animation-duration:0.5s;
+  animation-duration:0.5s;
 }
 
 @-webkit-keyframes fadeOut {
@@ -61,8 +61,8 @@
 .fadeOut {
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
-  -webkit-animation-duration:0.25s;
-  animation-duration:0.25s;
+  -webkit-animation-duration:0.5s;
+  animation-duration:0.5s;
 }
 
 @-webkit-keyframes scaleIn {

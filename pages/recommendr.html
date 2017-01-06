@@ -1,28 +1,22 @@
 <div class="innerPage">
     <div class="container-fluid">
         
-        <div class="hero" id="ghost">
+        <div class="hero" id="recommendr">
             <div id="title">
-                <h1>Ghost Companion</h1>
-                <h2>iOS Development, Android Development, Ionic Framework</h2>
-                <h3 class="trans"><!-- <a href="#">View Project</a> --></h3>
+                <h1>recommendr</h1>
+                <h2>Node.js, MongoDB, Spotify API</h2>
+                <h3 class="trans"><a href="https://github.com/liamdebeasi/cs411-project/" target="_blank">View Project</a></h3>
             </div>
         </div>
         
         <div id="main-content">
             <section class="text">
                 <h1>Overview</h1>
-                <p>From 2015-2016, I was the developer of Ghost, a Destiny companion app. My goal was to create a beautifully designed app while improving a user's gaming experience.</p>
+                <p>While attending Boston University, I was enrolled in a software engineering class. Part of our grade required us to work on a team of 4 people to build a web app from start to finish over the course of the semester. The teams were randomly chosen, and we were responsible for coming up with the idea, pitching the idea, and then building the app. We came up with "recommendr", a Spotify app that suggested music based upon a) your previous listening habits and b) an action you want to complete. Users can select actions like "Gym", "Party", or "Sleep" and recommendr will use the Spotify API to suggest a playlist to the use based upon the action. So for example, one could expect the Sleep playlist to contain music that is much quieter than the Party playlist. Users can then send that playlist to their Spotify app on their mobile device with the click of a button.</p>
                 
-                <p>My challenge was that there were already several Destiny companion apps available, so I needed something to make my app stand out. To do this, I implemented two features, "Tracked" and "Near Me". The first allows a user to have a push notification sent to their phone when a public event (an in-game, cooperative activity) is about to start. The second feature allows users to have the app track where they are in-game, and receive listings of public events based upon their location.</p>
+                <p>We used Node.js running on the Express server to handle all authentication and data processing. We setup a simple API that would allow the front end to make calls to retrieve or send data pertaining to a Spotify user. The team also integrated with the Twilio API to make it easy to collaborate on a playlist with users without a user having to first send the playlist to their phone before sharing.</p>
                 
-                <p>
-                    Since this was a hybrid app, a major emphasis was placed on performance. This app boasts 60fps animations and smooth scrolling, two things that are not often found in hybrid applications. I utilized the Ionic Framework to accomplish my goal of creating a fast and easy to use hybrid app. It was my first attempt at creating an application, so there was a significant learning curve that I had to overcome before I shipped the app in January of 2016.
-                </p>
-                
-                <p>
-                    Due to longer term work goals, I was forced to discontinue development of Ghost Companion during Summer 2016. 
-                </p>
+                <p>MongoDB was used as a caching system to allow users to easily update playlists. Without keeping track of a generated playlist ID, creating a "Gym" playlist and then another "Gym" playlist would create two separate playlists, since Spotify sees these as distinct. The playlist ID was cached in the database to allow users to simply update their playlists with new tracks.</p>
             </section>
             
             <section class="text">
@@ -31,9 +25,9 @@
             
             <section class="text">
                 <h1>Key Features</h1>
-                <p>&bull; Designed and developed a Destiny companion app that allowed users to track cooperative activities based upon their character’s in-game location</p>
-                <p>&bull; Leverages the Ionic and Angular frameworks to build a robust hybrid app with native-like performance</p>
-                <p>&bull; Engineered and deployed a simply API on AWS that allowed the app to retrieve user data</p>
+                <p>&bull; Worked on a team of 4 people to develop a web app in one semester</p>
+                <p>&bull; Built a simple API using Node.js and Express that integrated with the Twilio and Spotify APIs</p>
+                <p>&bull; Utilized mongoDB as a caching system to make it easy to update a playlist</p>
             </section>
             
             <section class="text">
