@@ -5,12 +5,15 @@ $.ajaxSetup ({
 
 // just show main page as opposed to reloading entire page
 $('.logo').click(function(){
-   
+   $('nav #main').click();
+
+/*
     if ($('#page').hasClass("fadeIn")) {
         $('nav #main').click();
     } else {
         window.location = "index.html";
     }
+*/
    return false; 
 });
 

@@ -113,14 +113,7 @@
                 </div>
             </section>
             <br>
-            <section>
-                <div class="row">
-                    <div class="col-xs-12 button-container">
-                        <a href="#" class="trans">View My Resume</a>
-                        <a href="mailto:liam@debeasi.com" class="trans">Contact Me</a>
-                    </div>
-                </div>
-            </section>
+            <section class="divider"></section>
             <br>
             <section>
                 <div class="row">
@@ -143,37 +136,9 @@
             </section>
         </div>
         
-        <div class="container-fluid hide" id="contact">
-            <div class="hero">
-                <div class="image" id="me-logo"></div>
-            </div>
-            
-            <section class="content">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h1>Title</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in porta eros, et interdum felis. Aenean vel sodales dui, pellentesque molestie mauris. Phasellus ullamcorper mattis est, a sollicitudin sem suscipit nec. Duis molestie efficitur felis, non pulvinar leo maximus nec. Nam ac elementum augue. Nulla faucibus ante egestas, gravida turpis et, vehicula tortor. Fusce quis augue nulla. Cras lacinia consectetur rutrum. Vivamus neque nisi, semper a dapibus a, sollicitudin sit amet neque. Integer eleifend elit in ligula ornare, eget cursus erat ullamcorper.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h1>Title</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in porta eros, et interdum felis. Aenean vel sodales dui, pellentesque molestie mauris. Phasellus ullamcorper mattis est, a sollicitudin sem suscipit nec. Duis molestie efficitur felis, non pulvinar leo maximus nec. Nam ac elementum augue. Nulla faucibus ante egestas, gravida turpis et, vehicula tortor. Fusce quis augue nulla. Cras lacinia consectetur rutrum. Vivamus neque nisi, semper a dapibus a, sollicitudin sit amet neque. Integer eleifend elit in ligula ornare, eget cursus erat ullamcorper.
-                        </p>
-                    </div>
-                </div>
-            </section>
-        </div>
-        
         <div class="container-fluid hide" id="page"></div>
         
-        <footer>&copy; 2016 Liam DeBeasi</footer>
+        <footer>&copy; <?php echo date('Y'); ?> Liam DeBeasi</footer>
 		<script src="js/min/app.min.js"></script>
 	</body>
 </html>
