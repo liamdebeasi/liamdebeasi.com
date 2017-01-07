@@ -5,6 +5,9 @@
 		<meta name = "viewport" content = "width = device-width, user-scalable = no, maximum-scale = 1.0">
 		<meta name="author" content="Liam DeBeasi">
 		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-title" content="Liam DeBeasi">
+		<meta name="application-name" content="Liam DeBeasi">
+		<meta name="mobile-web-app-capable" content="yes">
 		<meta name="description" content="Liam DeBeasi is a full stack developer working in Boston, MA.">
 		<meta name="keywords" content="liam debeasi, debeasi, web developer, brendan debeasi, ryan debeasi, paul debeasi, joseph debeasi, liamdbz, liamdebeasi">
 		<link rel="icon" type="image/png" href="images/favicon.jpg">  
@@ -80,6 +83,16 @@
                 
                 <div class="row">
                     <div class="col-xs-6 col-sm-3">
+                        <div class="item trans" id="image7" data-file="recommendr.html" data-theme="dark">
+                            <div class="overlay trans"><span>recommendr</span></div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="item trans" id="image8" data-file="dm.html" data-theme="light">
+                            <div class="overlay trans"><span>Data Mechanics</span></div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
                         <div class="item trans" id="image4" data-file="lotus.html" data-theme="dark">
                             <div class="overlay trans"><span>Lotus</span></div>
                         </div>
@@ -87,16 +100,6 @@
                     <div class="col-xs-6 col-sm-3">
                         <div class="item trans" id="image2" data-file="pp.html" data-theme="light">
                             <div class="overlay trans"><span>Property Planners</span></div>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-3">
-                        <div class="item trans" id="image7" data-file="recommendr.html" data-theme="dark">
-                            <div class="overlay trans"><span>recommendr</span></div>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-3">
-                        <div class="item trans" id="image8" data-file="ghost.html" data-theme="light">
-                            <div class="overlay trans"><span>HCG Associates</span></div>
                         </div>
                     </div>
                 </div>

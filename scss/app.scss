@@ -451,6 +451,9 @@ body {
                 &#recommendr {
                     background-image: url('../images/heros/recommendr.jpg');
                 }
+                &#dm {
+                    background-image: url('../images/heros/dm.jpg');
+                }
                 #title {
                     width: 90%;
                     margin: 0 auto;
@@ -646,7 +649,7 @@ body {
         
             nav {
                 display: none;
-                            
+                z-index: 9999;           
                 overflow-y: scroll;
                 -webkit-overflow-scrolling: touch;
                 position: fixed;

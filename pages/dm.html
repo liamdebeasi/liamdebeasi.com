@@ -1,0 +1,38 @@
+<div class="innerPage">
+    <div class="container-fluid">
+        
+        <div class="hero" id="dm">
+            <div id="title">
+                <h1>Data Mechanics</h1>
+                <h2>Leaflet.js, Node.js, Google Maps API</h2>
+                <h3 class="trans"><a href="https://github.com/liamdebeasi/course-2016-fal-proj/tree/master/asanentz_ldebeasi_mshop_sinichol" target="_blank">View Project</a></h3>
+            </div>
+        </div>
+        
+        <div id="main-content">
+            <section class="text">
+                <h1>Overview</h1>
+                <p>While attending Boston University, I was enrolled in a course called Data Mechanics. In this course, students will apply "tools and methods presented to build platforms and applications that work with data sets dealing with aspects of urban environments such as mobility (e.g., walkability), employment, traffic and parking, emissions, energy consumption, public safety, and others." I worked in a group of 4 to answer the question "Does income per capita affect access to alternative means of transportation in the Boston area?". We collected data sets and ran a clustering algorithm (k-means) to identify areas that would benefit the most from having a Subway, Bus, or Hubway station added. Alternative transportation, in the context of this project, was defined as MBTA Subway, MBTA Bus, and Hubway stations.</p>
+                
+                <p>Part of the requirement for this project was that we visualize our data in two different ways. Our first visualization used MapBox and Leaflet.js to overlay the locations of all alternative transportation stations on a map of Boston. The clusters from the clustering algorithm were also overlaid on the map to better visualize where these optimal spots are.</p>
+                
+                <p>The second visualization allowed users to enter a location and see the total number of Subway, Bus, and Hubway stops around that area. Using the Google Maps API, we were able to take advantage of their autocomplete API to make it easier for users to enter locations. We then sent a request to a simple API we had setup using Node.js and Express that queried our MongoDB database to retrieve data relevant to the location. All data processing was performed on the backend, and the results were then passed to the front end to be displayed to the user</p>
+            </section>
+            
+            <section class="text">
+                <img src="images/assets/dmBannerOne.jpg">
+            </section>
+            
+            <section class="text">
+                <h1>Key Features</h1>
+                <p>&bull; Worked on a team of 4 people to create a project that addressed an issue in the City of Boston</p>
+                <p>&bull; Created web services that allowed users to visualize the data our group had collected</p>
+                <p>&bull; Used MapBox, Leaflet.js, and Google Maps to create interactive maps</p>
+            </section>
+            
+            <section class="text">
+                <img src="images/assets/dmBannerTwo.jpg">
+            </section>
+        </div>
+    </div>
+</div>
