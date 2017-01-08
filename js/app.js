@@ -1,8 +1,3 @@
-$.ajaxSetup ({
-    // Disable caching of AJAX responses
-    cache: false
-});
-
 // just show main page as opposed to reloading entire page
 $('.logo').click(function(){
    $('nav #main').click();
@@ -27,12 +22,17 @@ if ('addEventListener' in document) {
 // prevent scrolling when mobile menu is open
 $('input[type=checkbox]').click(function(){
    
-    if ($(this).is(":checked")) {
-        $(document).on('touchstart', function(e) {
-            e.preventDefault();
-        });
-    } else {
-        $(document).off('touchstart');
+   try {
+        if ($(this).is(":checked")) {
+            $(document).off('touchmove');
+            $(document).on('touchmove', function(e) {
+                e.preventDefault();
+            });
+        } else {
+            $(document).off('touchmove');
+        }
+    } catch(e) {
+        console.log(e);
     }
 });
 
@@ -43,7 +43,7 @@ $('nav a').click(function(){
     var dest = $(this).attr("id");
     
     $('input[type=checkbox]').prop('checked', false);
-    $(document).off('touchstart');
+    $(document).off('touchmove');
         
     if (curr != dest) {
     
@@ -71,9 +71,9 @@ $('nav a').click(function(){
             }
             
             if (dest == "main") {
-                $('.container-fluid#' + dest).removeClass('hide').addClass("scaleInNoDelay").addClass("active");
+                $('.container-fluid#' + dest).addClass("scaleInNoDelay").removeClass('hide').addClass("active");
             } else {
-                $('.container-fluid#' + dest).removeClass('hide').addClass("fadeIn").addClass("active");
+                $('.container-fluid#' + dest).addClass("fadeIn").removeClass('hide').addClass("active");
             }
             
         }, 250);
@@ -88,10 +88,11 @@ $('.me-full').click(function(){
     $(this).removeClass("scaleInNoDelayFast").addClass("scaleOutFast");
     setTimeout(function() {
         $('.me-full').removeClass("scaleOutFast").addClass("hide");
-    }, 250);
+    }, 200);
 });
 
 $('.item').click(function(){
+    
     var file = $(this).data('file');
     var theme = $(this).data('theme');
     
@@ -117,3 +118,5 @@ $('.item').click(function(){
         });
     }, 250);
 });
+
+$('#me, .hero').show();

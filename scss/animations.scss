@@ -135,6 +135,7 @@
     animation-duration:.5s;
     animation-name:scaleIn;
     animation-fill-mode: forwards;
+    display: block;
 }
 
 .scaleInNoDelayFast {
@@ -144,6 +145,8 @@
     animation-duration:.25s;
     animation-name:scaleIn;
     animation-fill-mode: forwards;
+    display: block;
+    opacity: 1;
 }
 
 @-webkit-keyframes scaleOut {
@@ -202,6 +205,7 @@
     -webkit-animation-name:scaleOut;
     animation-duration:.5s;
     animation-name:scaleOut;
+    display: block;
 }
 
 .scaleOutFast {
@@ -209,4 +213,5 @@
     -webkit-animation-name:scaleOut;
     animation-duration:.25s;
     animation-name:scaleOut;
+    display: block;
 }

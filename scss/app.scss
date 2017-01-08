@@ -120,7 +120,7 @@ body {
         nav {
             padding-right: 50px;
             float: right;
-            ul {            
+            ul {     
                 a:link, a:visited {
                     font-weight: 500;
                     color: white;
@@ -191,13 +191,16 @@ body {
         }
     }
     .container-fluid {
-        opacity: 0;
         padding-top: 110px;
         &#page {
+            opacity: 0;
             padding-left: 0px !important;
             padding-right: 0px !important;
             -webkit-transition: all .25s ease-in-out;
             transition: all .25s ease-in-out;
+            #main-content {
+                opacity: 1;
+            }
         }
         #welcome {
             max-width: 700px;
@@ -240,6 +243,7 @@ body {
                     line-height: 18vw;
                     border-radius: 10px;
                     span {
+                        opacity: 0;
                         position: absolute;
                         left: 0;
                         right: 0;
@@ -247,12 +251,17 @@ body {
                         transform: translateY(-50%);
                         text-align: center;
                         -webkit-font-smoothing: subpixel-antialiased;
+                        -webkit-transition: all .25s ease-in-out;
+                        transition: all .25s ease-in-out;
                     }
                 }
                 &:hover {
                     transform: scale3d(1.1, 1.1, 1);
                     .overlay {
                         opacity: 1;
+                        span {
+                            opacity: 1;
+                        }
                     }
                 }
                 
@@ -300,8 +309,7 @@ body {
                 border: 2px solid white;
                 margin: 0 auto;
                 position: relative;
-                top: calc(50% + 70px);
-                transform: translateY(calc(-50% - 30px));
+                top: 44%;
                 background-size: cover;
                 background-repeat: no-repeat;
                 &#me {
@@ -313,7 +321,6 @@ body {
                 }
                 &:hover {
                     opacity: 0.8;
-                    
                 }
             }
         }
@@ -325,14 +332,13 @@ body {
             right: 0;
             top: 20%;
             bottom: 0;
-            max-width: 500px;
-            max-height: 500px;
+            width: 500px;
+            height: 500px;
             background-image: url('../images/me.jpg');
             background-size: cover;
             border-radius: 10px;
             z-index: 1;
             box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
-            opacity: 0;
         }
         section {
             width: 65%;
@@ -665,6 +671,7 @@ body {
                     -webkit-padding-before: 0px !important;
                     -webkit-padding-after: 0px !important;
                     -webkit-padding-start: 0px;
+                    padding: 0px;
                     a {
                         display: inherit;
                         margin: 0 !important;
@@ -736,9 +743,9 @@ body {
                 .hero {
                     height: $pageHeroHeightMobile !important;
                     #title {
-                        width: 80%;
-                        top: 80%;
-                        transform: translateY(-80%);
+                        width: 85%;
+                        top: 76%;
+                        transform: translateY(-76%);
                         h1 {
                             font-weight: 300;
                             font-size: 3rem;
@@ -841,14 +848,10 @@ body {
                         height: 40vw !important;
                         margin: 0 auto !important;
                         .overlay {
-                            line-height: 40vw;
-                            font-size: 12pt;
+                            display: none;
                         }
                         &:hover {
                             transform: scale3d(1,1,1);
-                            .overlay {
-                                opacity: 0;
-                            }
                         }
                     }
                 }
@@ -860,10 +863,10 @@ body {
                     width: 110px !important;
                     border-width: 3px !important;
                     -webkit-perspective: 1000;
-                    transform: translateY(calc(-50% - 45px)) !important;
+                    top: 35%;
                     &#me {
                         &:hover {
-                            transform: scale3d(1, 1, 1) translateY(calc(-50% - 45px)) !important;
+                            transform: scale3d(1, 1, 1);
                         }
                     }
                 }
