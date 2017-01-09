@@ -55,19 +55,7 @@ body {
                     background-color: white;
                 }
             }
-            .arrow {
-                cursor: pointer;
-                float: left;
-                background-image: url('../images/arrow.png');
-                width: 32px;
-                height: 32px;
-                background-size: contain;
-                margin: 22px 0 0 50px;
-                &:hover {
-                    opacity: 1;
-                }
-            }
-            h1, .arrow, nav a, .image {
+            h1, nav a, .image {
                 opacity: 0.5;
                 &:hover {
                     opacity: 1;
@@ -90,13 +78,40 @@ body {
             }
         }
     }
+    .back {
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        float: left;
+        background-image: url(../images/arrow.png);
+        width: 44px;
+        height: 44px;
+        background-size: 26px 26px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        margin: 90px 0 0 50px;
+        color: #fff;
+        opacity: 0.5;
+        filter: opacity(50%);
+        padding: 10px;
+        border-radius: 100px;
+        border: 2px solid rgba(255,255,255,0.5);
+        font-size: 26px;
+        line-height: 26px;
+        -webkit-transition: all .25s ease-in-out;
+        transition: all .25s ease-in-out;
+        &:hover {
+            opacity: 0.8;
+            filter: opacity(80%);
+        }
+    }
     header {
         position: fixed;
         left: 0;
         right: 0;    
         height: $headerHeight;
         font-weight: lighter !important;
-        z-index: 1;
+        z-index: 2;
         background-color: rgba(131,149,164,0.9);
         -webkit-backdrop-filter: blur(20px) saturate(180%);
         backdrop-filter: blur(20px) saturate(180%);
@@ -198,6 +213,9 @@ body {
             padding-right: 0px !important;
             -webkit-transition: all .25s ease-in-out;
             transition: all .25s ease-in-out;
+            &.fadeIn {
+                opacity: 1;
+            }
             #main-content {
                 opacity: 1;
             }
@@ -232,7 +250,7 @@ body {
                 cursor: pointer;
                 box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
                 background-image: url('../images/thumbs/sprite.jpg');
-                background-size: 800%;
+                background-size: 800% 800%;
                 .overlay {
                     opacity: 0;
                     color: white;
@@ -240,8 +258,8 @@ body {
                     font-size: 22px;
                     background-color: rgba(0, 0, 0, 0.75);
                     height: 100%;
-                    line-height: 18vw;
                     border-radius: 10px;
+                    -webkit-backdrop-filter: blur(20px) saturate(150%);
                     span {
                         opacity: 0;
                         position: absolute;
@@ -250,7 +268,7 @@ body {
                         top: 50%;
                         transform: translateY(-50%);
                         text-align: center;
-                        -webkit-font-smoothing: subpixel-antialiased;
+                        -webkit-font-smoothing: antialiased;
                         -webkit-transition: all .25s ease-in-out;
                         transition: all .25s ease-in-out;
                     }
@@ -281,7 +299,7 @@ body {
                     background-position: -400% -400%;
                 }
                 &#image6 {
-                    background-position: -500% -500%;
+                    background-position: -500% -499.9%;
                 }
                 &#image7 {
                     background-position: -600% -600%;
@@ -391,39 +409,6 @@ body {
         line-height: 100px;
     }
     .innerPage {
-        header {
-            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.35+0,0+100 */
-            background: -moz-linear-gradient(top, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 100%) !important; /* FF3.6-15 */
-            background: -webkit-linear-gradient(top, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0) 100%) !important; /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(to bottom, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0) 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
-            border: none;
-            -webkit-backdrop-filter: none !important;
-            backdrop-filter: none;
-            #nav-trigger {
-                .bar {
-                    background-color: white;
-                }
-            }
-            .arrow {
-                cursor: pointer;
-                float: left;
-                background-image: url('../images/arrow.png');
-                width: 32px;
-                height: 32px;
-                background-size: contain;
-                margin: 22px 0 0 50px;
-                &:hover {
-                    opacity: 1;
-                }
-            }
-            h1, .arrow, nav a, #nav-trigger {
-                opacity: 0.5;
-                &:hover {
-                    opacity: 1;
-                }
-            }
-        }
         .container-fluid {
             padding: 0 !important;
             opacity: 1 !important;
@@ -469,6 +454,7 @@ body {
                     right: 0;
                     top: 65%;
                     transform: translateY(-65%);
+                    -ms-transform: translateY(-65%);
                     h1 {
                         color: rgba(255, 255, 255, 0.9);
                         font-size: 7rem;
@@ -636,7 +622,13 @@ body {
                     }
                 }
             }
-        }  
+        } 
+        .back {
+            margin: 60px 0 0 20px;
+            width: 34px;
+            height: 34px;
+            background-size: 20px 20px;
+        } 
         header {
             height: 50px !important;
             h1 {
@@ -652,7 +644,6 @@ body {
             .bg {
                 height: 50px !important;
             }
-        
             nav {
                 display: none;
                 z-index: 9999;           
@@ -733,11 +724,6 @@ body {
         
         // portfolio page
         .innerPage {
-            .arrow {
-                height: 24px !important;
-                width: 24px !important;
-                margin: 12px 0 0 15px !important;
-            }
             .container-fluid {
                 opacity: 1;
                 .hero {

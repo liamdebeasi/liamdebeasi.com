@@ -22,7 +22,7 @@
     </head>
     <body class="trans">
         <header class="trans">
-                        
+                
             <h1 class="trans"><a href="#" class="trans logo">liam debeasi</a></h1>
             
             <input type="checkbox" class="nav-checkbox">
@@ -46,13 +46,15 @@
                 </ul>
                 
                 <div class="social-container">
-                    <a href="mailto:liam@debeasi.com" target="_blank"><div class="image trans" id="email"></div></a>
-                    <a href="https://github.com/liamdebeasi" target="_blank"><div class="image trans" id="github"></div></a>
-                    <a href="https://twitter.com/liamdebeasi" target="_blank"><div class="image trans" id="twitter"></div></a>
-                    <a href="https://www.linkedin.com/in/liamdebeasi" target="_blank"><div class="image trans" id="linkedin"></div></a>               
+                    <a href="mailto:liam@debeasi.com" target="_blank" class="no-nav"><div class="image trans" id="email"></div></a>
+                    <a href="https://github.com/liamdebeasi" target="_blank" class="no-nav"><div class="image trans" id="github"></div></a>
+                    <a href="https://twitter.com/liamdebeasi" target="_blank" class="no-nav"><div class="image trans" id="twitter"></div></a>
+                    <a href="https://www.linkedin.com/in/liamdebeasi" target="_blank" class="no-nav"><div class="image trans" id="linkedin"></div></a>               
                 </div>
             </nav>
         </header>
+        
+        <div class="back hide"></div>
         
         <div class="container-fluid scaleIn active" id="main">
             <div id="welcome">Hi! I'm Liam DeBeasi, a full stack developer. I craft beautifully designed web and mobile applications.</div>
@@ -131,10 +133,10 @@
                     <div class="col-xs-12">
                         <h1>Academics</h1>
                         <p>
-                            During my time at BU, I have been involved in research, club, and teaching opportunities.
+                            During my time at BU, I have been involved in research, clubs, and teaching opportunities.
                         </p>
                         <p>
-                            I am currently working as a course assistant for the <a href="http://www.cs.bu.edu/courses/cs111/"> Introduction to Computer Science I</a> class at BU where myself and the rest of the course staff use Python to provide approximately 400 students an introduction to data structures, algorithms, and other foundational CS topics. My responsibilities mainly include assisting with labs, running office hours, and answering student questions on Piazza.
+                            I am currently working as a course assistant for the <a href="http://www.cs.bu.edu/courses/cs111/"> Introduction to Computer Science I</a> class at BU where I and the rest of the course staff use Python to provide approximately 400 students an introduction to data structures, algorithms, and other foundational CS topics. My responsibilities mainly include assisting with labs, running office hours, and answering student questions on Piazza.
                         </p>
                         <p>
                             During my time as President of <a href="http://openwebbu.org">Open Web</a>, I led a team of 15 BU students to teach development workshops and build web apps, mobile apps, and games. In addition I have taught an introductory course on web development for 2 years.

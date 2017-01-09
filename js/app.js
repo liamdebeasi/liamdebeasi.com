@@ -1,17 +1,8 @@
 // just show main page as opposed to reloading entire page
-$('.logo').click(function(){
+$('.logo, .back').click(function(){
    $('nav #main').click();
-
-/*
-    if ($('#page').hasClass("fadeIn")) {
-        $('nav #main').click();
-    } else {
-        window.location = "index.html";
-    }
-*/
    return false; 
 });
-
 // Initialize FastClick.js
 if ('addEventListener' in document) {
     document.addEventListener('DOMContentLoaded', function() {
@@ -21,62 +12,62 @@ if ('addEventListener' in document) {
 
 // prevent scrolling when mobile menu is open
 $('input[type=checkbox]').click(function(){
-   
-   try {
-        if ($(this).is(":checked")) {
-            $(document).off('touchmove');
-            $(document).on('touchmove', function(e) {
-                e.preventDefault();
-            });
-        } else {
-            $(document).off('touchmove');
-        }
-    } catch(e) {
-        console.log(e);
+    if ($(this).is(":checked")) {
+        $(document).off('touchmove');
+        $(document).on('touchmove', function(e) {
+            e.preventDefault();
+        });
+    } else {
+        $(document).off('touchmove');
     }
 });
 
 // show a new nav page
 $('nav a').click(function(){
     
-    var curr = $('.container-fluid.active').attr("id");
-    var dest = $(this).attr("id");
+    if (!$(this).hasClass("no-nav")) {
     
-    $('input[type=checkbox]').prop('checked', false);
-    $(document).off('touchmove');
+        var curr = $('.container-fluid.active').attr("id");
+        var dest = $(this).attr("id");
         
-    if (curr != dest) {
-    
-        // tranisition out
-        if (curr == "main") {
-            $('.container-fluid#' + curr).removeClass('scaleIn').removeClass("scaleInNoDelay").addClass("scaleOut");
-        } else {
-            $('.container-fluid#' + curr).removeClass('fadeIn').addClass("fadeOut");
+        $('input[type=checkbox]').prop('checked', false);
+        $(document).off('touchmove');
             
-            if (curr == "page") {
-                $('body').removeClass("dark"); 
-                $('footer').removeClass("hide").addClass("fadeIn");
-            }
-        }
-            
-        // tranisitioning in
-        setTimeout(function(){
-            
-            $('body').scrollTop(0);
-            
+        if (curr != dest) {
+        
+            // tranisition out
             if (curr == "main") {
-                $('.container-fluid#' + curr).removeClass('scaleOut').removeClass("active").addClass("hide");
+                $('.container-fluid#' + curr).removeClass('scaleIn').removeClass("scaleInNoDelay").addClass("scaleOut");
             } else {
-                $('.container-fluid#' + curr).removeClass('fadeOut').removeClass("active").addClass("hide");
+                $('.container-fluid#' + curr).removeClass('fadeIn').addClass("fadeOut");
+                
+                if (curr == "page") {
+                    $('body').removeClass("dark"); 
+                    $('footer').removeClass("hide").addClass("fadeIn");
+                    $('.back').removeClass("fadeIn").addClass("fadeOut");
+                }
             }
-            
-            if (dest == "main") {
-                $('.container-fluid#' + dest).addClass("scaleInNoDelay").removeClass('hide').addClass("active");
-            } else {
-                $('.container-fluid#' + dest).addClass("fadeIn").removeClass('hide').addClass("active");
-            }
-            
-        }, 250);
+                
+            // tranisitioning in
+            setTimeout(function(){
+                
+                $('body').scrollTop(0);
+                $('.back').removeClass("fadeOut").addClass("hide");
+                            
+                if (curr == "main") {
+                    $('.container-fluid#' + curr).removeClass('scaleOut').removeClass("active").addClass("hide");
+                } else {
+                    $('.container-fluid#' + curr).removeClass('fadeOut').removeClass("active").addClass("hide");
+                }
+                
+                if (dest == "main") {
+                    $('.container-fluid#' + dest).addClass("scaleInNoDelay").removeClass('hide').addClass("active");
+                } else {
+                    $('.container-fluid#' + dest).addClass("fadeIn").removeClass('hide').addClass("active");
+                }
+                
+            }, 250);
+        }
     }
 });
 
@@ -109,9 +100,10 @@ $('.item').click(function(){
         $('body').scrollTop(0);
         
         $('.container-fluid#page').load('pages/' + file, function() {
-            $('.container-fluid#page').removeClass("hide")
+            $('.container-fluid#page').removeClass("hide");
            setTimeout(function(){
                $('.container-fluid#page').addClass("active"); 
+               $('.back').removeClass("hide").addClass("fadeIn");
                $('.container-fluid#page').addClass("fadeIn");
             }, 250);
            
