@@ -137,10 +137,10 @@
                             During my time at BU, I have been involved in research, clubs, and teaching opportunities.
                         </p>
                         <p>
-                            I am currently working as a course assistant for the <a href="http://www.cs.bu.edu/courses/cs111/"> Introduction to Computer Science I</a> class at BU where I and the rest of the course staff use Python to provide approximately 400 students an introduction to data structures, algorithms, and other foundational CS topics. My responsibilities mainly include assisting with labs, running office hours, and answering student questions on Piazza.
+                            I am currently working as a course assistant for the <a href="http://www.cs.bu.edu/courses/cs111/"> Introduction to Computer Science I</a> class at BU where I and the rest of the course staff use Python to provide approximately 400 students with an introduction to data structures, algorithms, and other foundational CS topics. My responsibilities mainly include assisting with labs, running office hours, and answering student questions on Piazza.
                         </p>
                         <p>
-                            During my time as President of <a href="http://openwebbu.org">Open Web</a>, I led a team of 15 BU students to teach development workshops and build web apps, mobile apps, and games. In addition I have taught an introductory course on web development for 2 years.
+                            During my time as President of <a href="http://openwebbu.org">Open Web</a>, I led a team of 15 BU students to teach development workshops and build web apps, mobile apps, and games. In addition I taught the club's introductory course on web development for 2 years.
                         </p>
                         <p>
                             I have been involved in a few research projects. The most recent one assessed how income per capita affects alternative methods of transportation in Boston. The <a href="https://github.com/Data-Mechanics/course-2016-fal-proj/tree/master/asanentz_ldebeasi_mshop_sinichol">GitHub code</a>, <a href="https://github.com/Data-Mechanics/course-2016-fal-proj/blob/master/asanentz_ldebeasi_mshop_sinichol/2016-fal-asanentz_ldebeasi_mshop_sinichol-report.pdf">project report</a>, and <a href="https://github.com/Data-Mechanics/course-2016-fal-proj/blob/master/asanentz_ldebeasi_mshop_sinichol/2016-fal-asanentz_ldebeasi_mshop_sinichol-poster.pdf">project poster</a> are all available online.
