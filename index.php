@@ -17,6 +17,7 @@
 		<meta property="og:title" content="Liam DeBeasi" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://liamdebeasi.com" />
+        <meta property="og:description" content="Liam DeBeasi is a full stack developer working in Boston, MA." />
         <meta property="og:image" content="https://liamdebeasi.com/images/me.jpg" />
 		<title>Liam DeBeasi | Full Stack Developer</title>
     </head>
