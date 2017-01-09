@@ -23,7 +23,10 @@
     <body class="trans">
         <header class="trans">
                 
-            <h1 class="trans"><a href="#" class="trans logo">liam debeasi</a></h1>
+            <h1 class="trans"><a href="#" class="trans logo">
+                <div class="back hide"></div>
+                <div class="trans name">liam debeasi</div>
+            </a></h1>
             
             <input type="checkbox" class="nav-checkbox">
             
@@ -53,8 +56,6 @@
                 </div>
             </nav>
         </header>
-        
-        <div class="back hide"></div>
         
         <div class="container-fluid scaleIn active" id="main">
             <div id="welcome">Hi! I'm Liam DeBeasi, a full stack developer. I craft beautifully designed web and mobile applications.</div>

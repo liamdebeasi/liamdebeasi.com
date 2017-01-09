@@ -1,5 +1,5 @@
 // just show main page as opposed to reloading entire page
-$('.logo, .back').click(function(){
+$('.logo').click(function(){
    $('nav #main').click();
    return false; 
 });
@@ -87,6 +87,11 @@ $('.item').click(function(){
     var file = $(this).data('file');
     var theme = $(this).data('theme');
     
+    // preload image
+    var image = (file.split('.'))[0];
+    var toLoad = new Image();
+    toLoad.src = "images/heros/" + image + ".jpg";
+    
     $('.container-fluid#main').removeClass('scaleIn').removeClass('scaleInNoDelay').removeClass("scaleIn").addClass('scaleOut');
     $('footer').addClass("fadeOut");
     if (theme == 'dark') {
@@ -111,4 +116,7 @@ $('.item').click(function(){
     }, 250);
 });
 
+// preload/prepaint assets
 $('#me, .hero').show();
+var preloadSocial = new Image();
+preloadSocial.src = "images/social-sprite.png";
