@@ -153,7 +153,10 @@
         
         <div class="container-fluid hide" id="page"></div>
         
-        <footer>&copy; <?php echo date('Y'); ?> Liam DeBeasi</footer>
+        <footer>&copy; <span id="footer-year">2019</span> Liam DeBeasi</footer>
+        <script>
+            document.getElementById('footer-year').innerText = new Date().getFullYear();
+        </script>
 		<script src="js/min/app.min.js"></script>
 	</body>
 </html>
