@@ -1,11 +1,30 @@
-body {
-  padding: 16px;
-  
+html {
+  font: -apple-system-body;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Roboto", sans-serif;
+  
+  --header-color: #333;
+  --body-color: #555;
+  --footer-color: #757575;
+}
+
+body {
+  padding: 16px;  
+  background: var(--background);
 }
 
 strong, a {
   font-weight: 600;
+}
+
+main p {
+  font-size: 1.375rem;
+  color: var(--body-color);
+}
+
+main h1 {
+  font-weight: normal;
+  font-size: 1.6rem;
+  color: var(--header-color);
 }
 
 main a {
@@ -14,19 +33,19 @@ main a {
   position: relative;
   display: inline-block;
   
-  color: var(--color);
+  color: var(--link-color);
 }
 
 main a.ionic {
-  --color: #3781ff;
+  --link-color: #3781ff;
 }
 
 main a.neurala {
-  --color: #3E862C;
+  --link-color: #3E862C;
 }
 
 main a.systematic {
-  --color: #9c29b1;
+  --link-color: #9c29b1;
 }
 
 .me {
@@ -45,12 +64,6 @@ main a.systematic {
   max-width: 500px;
   
   margin: 0 auto;
-}
-
-main p {
-  color: #333;
-  
-  font-size: 22px;
 }
 
 .social {
@@ -90,10 +103,9 @@ main p {
 }
 
 footer {
-  font-size: 14px;
   font-weight: 300;
   
-  color: #757575;
+  color: var(--footer-color);
 }
 
 @media (any-hover: hover) {
@@ -128,12 +140,11 @@ footer {
 }
 
 @media (prefers-color-scheme: dark) {
-  body {
-    background: #1e1e1e;
-  }
-
-  main p {
-    color: #eee;
+  html {
+    --header-color: #fff;
+    --body-color: #ddd;
+    --footer-color: #aaa;
+    --background: #1e1e1e;
   }
   
   .social a {
@@ -141,14 +152,10 @@ footer {
   }
   
   main a.systematic {
-    --color: #ca46ff;
+    --link-color: #ca46ff;
   }
   
   main a.neurala {
-    --color: #96cc6d;
-  }
-  
-  footer {
-    color: #aaaaaa;
+    --link-color: #96cc6d;
   }
 }
