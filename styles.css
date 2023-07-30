@@ -37,7 +37,7 @@ main a {
 }
 
 main a.ionic {
-  --link-color: #3781ff;
+  --link-color: #3172E5;
 }
 
 main a.neurala {
@@ -151,8 +151,40 @@ footer {
     filter: invert(1);
   }
   
+  main a.ionic {
+    --link-color: #3781ff;
+  }
+  
   main a.systematic {
     --link-color: #ca46ff;
+  }
+  
+  main a.neurala {
+    --link-color: #96cc6d;
+  }
+}
+
+@media (prefers-contrast: more) {  
+  main a.ionic {
+    --link-color: #2555AB;
+  }
+  
+  main a.systematic {
+    --link-color: #8F26A4;
+  }
+  
+  main a.neurala {
+    --link-color: #2E6522;
+  }
+}
+
+@media (prefers-contrast: more) and (prefers-color-scheme: dark) {  
+  main a.ionic {
+    --link-color: #54AEFF;
+  }
+  
+  main a.systematic {
+    --link-color: #E184FF;
   }
   
   main a.neurala {
