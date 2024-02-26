@@ -48,6 +48,10 @@ main a.systematic {
   --link-color: #9c29b1;
 }
 
+main a.contrast {
+  --link-color: #622a91;
+}
+
 .me {
   width: 100px;
   height: 100px;
@@ -125,7 +129,7 @@ footer {
     height: 3px;
     
     border-radius: 4px;
-    background: var(--color);
+    background: var(--link-color);
     
     transform: scaleX(0);
     transition: 0.2s transform ease-in-out;
@@ -160,6 +164,10 @@ footer {
   main a.neurala {
     --link-color: #96cc6d;
   }
+
+  main a.contrast {
+    --link-color: #b87bea;
+  }
 }
 
 @media (prefers-contrast: more) {  
@@ -174,6 +182,8 @@ footer {
   main a.neurala {
     --link-color: #2E6522;
   }
+
+  /* Contrast link already has sufficient AAA contrast so we do not change it here */
 }
 
 @media (prefers-contrast: more) and (prefers-color-scheme: dark) {  
@@ -188,4 +198,6 @@ footer {
   main a.neurala {
     --link-color: #96cc6d;
   }
+
+  /* Contrast link already has sufficient AAA contrast so we do not change it here */
 }
